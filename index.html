@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <p id="description"></p>
+  <form id="survey-form">
+  <label for="name" id="name-label"></label>
+  <input id="name" type="text" placeholder="Name"></input>
+  <label for="email" id="email-label"></label>
+  <input id="email" type="email" placeholder="Email"></input>
+  <label for="number" id="number-label"></label>
+  <input id="number" type="number" min= 0 max= 100 placeholder="Number"></input>
+<select id="dropdown">
+  <option value="Happy">Happy</option>
+  <option value="Sad">Sad</option>
+  <option value="Meh">Meh</option>
+  <option value="Other">Other</option>
+</select>
+<fieldset>
+  <legend>Did you know that the bird is the word?</legend>
+  <input type="radio" name="word" value="one">Yes</input>
+  <input type="radio" name="word" value="two">No</input>
+</fieldset>
+<fieldset>
+  <legend>Do you now?</legend>
+  <input type="checkbox" name="box" value="yes">Yes</input>
+  <input type="checkbox" name="box" value="no">No</input>
+</fieldset>
+<fieldset>
+  <legend>What has brought you to this conclusion?</legend>
+  <input type="textarea" name="text" placeholder="Explain Yourself Clown"></input>
+</fieldset>
+<input id="submit" type="submit"></input>
+  </form>
+</body>
+</html>
